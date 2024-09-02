@@ -1,3 +1,7 @@
+# 配置说明
+# https://yun.yunyoujun.cn/guide/
+
+# 支持KaTeX和MathJax
 markdown:
   render:
     html: true
@@ -9,3 +13,207 @@ markdown:
   anchors:
     level: 1
     collisionSuffix: ""
+
+# 跳过source渲染的文件
+skip_render:
+  - "**/*.js"
+
+# 自定义主题的主色调
+colors:
+  primary: "#6200ee"
+  # bg: "#F5F5F5" # 背景色
+  selection_bg: "#8e71c1" # 选取文字时的背景色
+  # 标签云中标签的起始色和结束色
+  # tag_start_color:
+  # tag_end_color:
+
+# 标签指定色彩，默认色 #333
+tags:
+  Vue: "#4fc08d"
+  Hexo: "#0E834D"
+  CSS: "#5298d1"
+  Node.js: "#026E00"
+  Git: "#F14E32"
+  React: "#61dafb"
+  Python: "#3776ab"
+  PHP: "#8892BF"
+  VS Code: "#0066B8"
+  JavaScript: "#F4DF4F"
+  TypeScript: "#317AC6"
+  Laravel: "#F4645F"
+
+# 分类指定色彩，默认色 #333
+categories:
+  笔记: dimgray
+
+# head 头部资源
+# head:
+#   css:
+#     example: //example.min.css
+#   js:
+#     base:
+#       - xxx
+#     async:
+#     defer:
+
+# 网站图标(放在source文件下)
+favicon: /logo.ico
+
+# 标语动画
+banner:
+  enable: true
+  title:
+    - keai
+    - keqing
+    - Blog
+  border: true
+  cloud:
+    enable: true
+    color: white
+  go_down:
+    enable: true
+    icon: ri:arrow-down-s-line
+
+# 公告
+notice:
+  enable: true
+  content: 正在建设中，部分功能不可用，敬请谅解！😊
+
+# UI 亮暗
+# 可选 light | dark | auto | time
+mode: auto
+
+# 字体
+# head:
+#   css:
+#     fonts: https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+# font:
+#   cdn:
+#     enable: true
+#     lib:
+#       - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+#   serif:
+#     family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
+#     weight: 900
+#   sans_serif:
+#     family: '''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
+#     weight: 400
+#   monospace:
+#     family: '''Source Code Pro'', ''Courier New'', Courier, Consolas, Monaco, monospace'
+
+# 图片背景
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+  # dark: # 暗色背景图片链接，仅在开启暗色模式时有效
+  # blur: 30px # 设置背景模糊程度，更建议用户通过图像处理工具来模糊图片作为背景
+  opacity: 0.8
+
+# 搜索背景
+search:
+  modal: true # 启用模态框时，搜索背景将为模糊后的下层内容，不再使用背景图片
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  dark_bg_image: xxx # 暗色模式下的背景，仅在你开启暗色模式时有效
+  # placeholder: # 索框提示文字（如果不设置，将自动根据 Hexo 语言配置选取对应的文本）
+
+# 随机多边形背景
+trianglify:
+  enable: false
+  cellSize: 75 # 多边形网格尺寸
+  width: 800
+  height: 600
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]' # 调色盘，请参考文档配置
+  opacity: 0.5 # 透明度
+
+# 点击页面的烟花特效
+fireworks:
+  enable: true
+  colors:
+    - "102, 167, 221"
+    - "62, 131, 225"
+    - "33, 78, 194"
+
+# 点击文章图片，放大预览
+medium_zoom: true
+
+# 首页卡片与文章内部图片的滚动浮现效果，可见官网，默认开启
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .markdown-body img
+
+# 替换鼠标光标，默认关闭。开启时默认使用 Material Design Cursors
+cursor:
+  enable: true
+  default: https://cdn.yunyoujun.cn/css/md-cursors/pointer.cur # 默认图标
+  pointer: https://cdn.yunyoujun.cn/css/md-cursors/link.cur # 指针（即链接状态下）图标
+  text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur # 文本（即文字状态下）图标
+
+# 背景与标签
+sidebar:
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_position: bottom 3rem center
+  tagcloud:
+    enable: false # 在侧边栏显示 Hexo 原生标签页
+    amount: 20 # 标签数量
+
+# 头像
+avatar:
+  enable: true
+  url: /logo.ico
+  rounded: true
+  opacity: 1
+  mickey_mouse: true # 默认关闭，开启后文章页面侧边栏的头像将向上移动（迪士尼警告）
+  status: # 头像状态
+    enable: false
+    emoji: 😭
+    message:
+
+# 文章
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+
+# 代码复制
+codeblock:
+  copy_btn: true
+
+# 打赏
+reward:
+  enable: false
+  # icon: ri:hand-coin-line
+  # comment: I'm so cute. Please give me money.
+  # # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  # methods:
+  #   - name: 支付宝
+  #     path: https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg
+  #     color: '#00A3EE'
+  #     icon: ri:alipay-line
+  #     # link: https://xxxx
+  #   - name: QQ 支付
+  #     path: https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png
+  #     color: '#12B7F5'
+  #     icon: ri:qq-line
+  #   - name: 微信支付
+  #     path: https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg
+  #     color: '#2DC100'
+  #     icon: ri:wechat-pay-line
+
+# 评论
+comment:
+  enable: true
+  tips:
+    - 欢迎交流和讨论，如文章有错误或不规范之处，还请多多指正，非常感谢！
+  candidates:
+    - utterances
+
+utterances:
+  enable: true
+  repo: keaikeqing/keaikeqing.github.io
+  issue-term: pathname
+  # label: comment
+  theme: github-light

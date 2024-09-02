@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: keaikeqing`s Blog
 subtitle: ""
 description: ""
 keywords:
-author: John Doe
+author: keaikeqing
 language: zh-CN
-timezone: ""
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://blog.keaikeqing.me
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -43,17 +43,16 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
+syntax_highlighter: prismjs
+# 关闭 highlight
 highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ""
-  wrap: true
-  hljs: false
+  enable: false
+# 启用 prism
 prismjs:
+  enable: true
   preprocess: true
-  line_number: true
-  tab_replace: ""
+  line_number: false
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -103,4 +102,6 @@ theme: yun
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: git
+  repo: https://github.com/keaikeqing/keaikeqing.github.io.git
+  branch: dev
