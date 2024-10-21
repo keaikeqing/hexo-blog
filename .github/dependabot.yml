@@ -1,7 +1,35 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 20
+  - package-ecosystem: npm # 指定使用npm作为包管理系统
+    directory: "/"                  # 指定项目的目录，"/"代表项目的根目录
+    schedule:
+      interval: weekly          # 指定更新频率
+      time: "10:00"                  # 指定更新时间
+      timezone: "Asia/Shanghai"      # 指定时区
+    open-pull-requests-limit: 10    # 限制同时打开的PR数量
+    reviewers:
+      - "keaikeqing"      # 当Dependabot创建一个PR时，自动指定一个reviewer。替换为您的GitHub用户名。
+    target-branch: "net-master-keaikeqing"        # 指定PR的目标分支
+    labels:                        # 为Dependabot创建的PR添加标签
+      - "dependencies"             # 添加一个名为"dependencies"的标签
+      - "automerge"               # 添加一个名为"automerge"的标签
+    # ignore:                       # 忽略的依赖
+    # allow:                       # 允许的依赖
+    commit-message: "Bump gradle dependencies"  # 提交信息
+      prefix: "deps"
+      include: "scope"
+    # assignees:                   # 指定PR的assignees
+    #   - "keaikeqing"
+    # milestone: 5                # 指定PR的里程碑
+    rebase-strategy: "auto"      # 指定rebase策略
+    versioning-strategy: "auto" # 指定版本策略
+    pull-request-branch-name: # 定义Dependabot创建的分支名称中使用的分隔符
+      separator: "-"
+    # insecure-external-code-execution: "allow" # 允许在更新过程中执行不安全的外部代码
+    vendor: true # 将依赖项安装到项目的vendor目录中
+    # groups:
+    #   dev-dependencies:
+    #     patterns:
+    #       - "*test*"
+    #       - "*mock*"
+    security-updates-only: false # 仅更新安全更新
