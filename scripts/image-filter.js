@@ -17,12 +17,12 @@ hexo.extend.filter.register("after_render:html", function (htmlContent) {
               <img src="${src}" alt="${alt}" ${rest} 
                   ${
                     width && height
-                      ? `style="display: block; margin: 0 auto; width: ${width}%; height: ${height}%;"`
-                      : 'style="display: block; margin: 0 auto;"'
+                      ? `style="display: block; margin: 0 auto; width: ${width}%; height: ${height}%; max-width: 500px; max-height: 500px;"`
+                      : 'style="display: block; margin: 0 auto; max-width: 500px; max-height: 500px;"'
                   }>
-              <span style="margin-top: 5px; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: #d9d9d9; font-size: 13px; display: block;">${title}</span>
+              <span style="margin-top: 10px; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: #d9d9d9; font-size: 20px; display: block;">${title}</span>
           </div>
-        `;
+      `;
     }
   );
 });
