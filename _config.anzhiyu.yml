@@ -969,8 +969,7 @@ note:
 # other
 # --------------------------------------
 
-# Pjax
-# It may contain bugs and unstable, give feedback when you find the bugs.
+# Pjax (页面无刷新加载)
 # https://github.com/MoOx/pjax
 pjax:
   enable: true
@@ -985,8 +984,7 @@ aplayerInject:
 
 # Snackbar (Toast Notification 弹窗)
 # https://github.com/polonel/SnackBar
-# position 弹窗位置
-# 可选 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
+# position 弹窗位置 可选 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   enable: true
   position: top-center
@@ -998,7 +996,7 @@ snackbar:
 instantpage: true
 
 # https://github.com/vinta/pangu.js
-# Insert a space between Chinese character and English character (中英文之间添加空格)
+# 中英文之间添加空格
 pangu:
   enable: true
   field: post # site/post
@@ -1012,9 +1010,6 @@ lazyload:
   blur: true
   progressive: true
 
-# PWA
-# See https://github.com/JLHwung/hexo-offline
-# ---------------
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------

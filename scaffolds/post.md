@@ -2,10 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 updated: {{ date }}
-tags: 
 categories: 
-keywords: 
-description: 
-top_img: 
-cover: 
+top_img: /assets/
+cover: /assets/
 ---
