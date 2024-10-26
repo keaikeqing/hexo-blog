@@ -1,0 +1,37 @@
+{
+    "name": "可爱可倾",
+    "short_name": "可爱可倾",
+    "theme_color": "#3b70fc",
+    "background_color": "#3b70fc",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/",
+    "id": "/",
+    "icons": [
+    {
+      "src": "public/img/siteicon/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "public/img/siteicon/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "public/img/siteicon/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "public/img/siteicon/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+    ],
+    "splash_pages": null
+  }

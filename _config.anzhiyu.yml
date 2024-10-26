@@ -1,20 +1,19 @@
 # 菜单
 menu:
   文章:
-    隧道: /archives/ || anzhiyu-icon-box-archive
+    归档: /archives/ || anzhiyu-icon-box-archive
     分类: /categories/ || anzhiyu-icon-shapes
-    标签: /tags/ || anzhiyu-icon-tags
 
   我的:
-    音乐馆: /music/ || anzhiyu-icon-music
     追番页: /bangumis/ || anzhiyu-icon-bilibili
+    留言板: /comments/ || anzhiyu-icon-envelope
 
-  关于: /about/ || anzhiyu-icon-paper-plane
+  关于: /about/
 
 # nav相关配置
 nav:
-  enable: true
-  travelling: true
+  enable: false
+  travelling: false
   clock: true
   menu:
     - title: 网页
@@ -45,23 +44,28 @@ code_word_wrap: false
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # social settings (社交图标设置)
 # formal:
 #   name: link || icon
 social:
-  # Github: https://github.com/anzhiyu-c || anzhiyu-icon-github
-  # BiliBili: https://space.bilibili.com/372204786 || anzhiyu-icon-bilibili
+  Github: https://github.com/keaikeqing || anzhiyu-icon-github
+  BiliBili: https://space.bilibili.com/474502279 || anzhiyu-icon-bilibili
+
+icons:
+  ali_iconfont_js: # 阿里图标symbol 引用链接，主题会进行加载 symbol 引用
+  fontawesome: false #是否启用fontawesome6图标
+  fontawesome_animation_css: #fontawesome_animation 如果有就会加载，示例值：https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css
 
 # 作者卡片 状态
 author_status:
-  enable: false
+  enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
-  statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
+  statusImg: "https://bu.dusays.com/2021/01/15/1512ba515a3fe.png"
   skills:
-    # - 🤖️ 数码科技爱好者
+    - 🤖️ 数码科技爱好者
     # - 🔍 分享与热心帮助
     # - 🏠 智能家居小能手
     # - 🔨 设计开发一条龙
@@ -96,7 +100,7 @@ docsearch:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   preload: true
   CDN:
 
@@ -109,12 +113,12 @@ local_search:
 
 # MathJax
 mathjax:
-  enable: false
+  enable: true
   per_page: false
 
 # KaTeX
 katex:
-  enable: false
+  enable: true
   per_page: false
   hide_scrollbar: true
 
@@ -122,11 +126,11 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /favicon.ico
+favicon: /assets/favicon.ico
 
 # Avatar (头像)
 avatar:
-  img: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg
+  img: /assets/avatar.ico
   effect: false
 
 # Disable all banner image
@@ -136,7 +140,7 @@ disable_top_img: false
 index_img: false # "background: url() top / cover no-repeat"
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: false
+default_top_img: /assets/default_top_img.webp
 
 cover:
   # display the cover or not (是否显示文章封面)
@@ -145,21 +149,23 @@ cover:
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
   # left/right/both
-  position: left
+  position: both
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-    # - /img/default_cover.jpg
+    - /assets/default_paper_cover.webp
+    - /assets/default_paper_cover2.webp
+    - /assets/default_paper_cover3.webp
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: /assets/404.webp
+  post_page: /assets/404.webp
 
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: "请尝试站内搜索寻找文章"
-  background: https://bu.dusays.com/2023/05/08/645907596997d.gif
+  subtitle: "唔...似乎迷路了，试试站内搜索文章吧"
+  background: /assets/404.webp
 
 post_meta:
   page: # Home Page
@@ -176,9 +182,22 @@ post_meta:
     label: true # true or false 显示描述性文字
     unread: false # true or false 文章未读功能
 
+# 文章版权相关配置
+post_copyright:
+  enable: true
+  decode: false
+  author_href:
+  location: 天津
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  avatarSinks: false # hover时头像下沉
+  copyright_author_img_back:
+  copyright_author_img_front:
+  copyright_author_link: /
+
 # 主色调相关配置
 mainTone:
-  enable: false # true or false 文章是否启用获取图片主色调
+  enable: true # true or false 文章是否启用获取图片主色调
   mode: api # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求both/cdn/api获取主色调，而是直接使用配置的颜色
   # 项目地址：https://github.com/anzhiyu-c/img2color-go
   api: https://img2color-go.vercel.app/api?img= # mode为api时可填写
@@ -187,7 +206,7 @@ mainTone:
 # wordcount (字数统计)
 # see https://blog.anheyu.com/posts/c27d.html#字数统计
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -216,28 +235,25 @@ toc:
   expand: false
   style_simple: false # for post
 
-post_copyright:
-  enable: true
-  decode: false
-  author_href:
-  location: 长沙
-  license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
-  avatarSinks: false # hover时头像下沉
-  copyright_author_img_back:
-  copyright_author_img_front:
-  copyright_author_link: /
-
 # Sponsor/reward
 reward:
   enable: true
   QR_code:
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+    - img: /assets/qrcode-weichat.webp
       link:
       text: 微信
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+    - img: /assets/qrcode-alipay.webp
       link:
       text: 支付宝
+
+# Related Articles
+related_post:
+  enable: true
+  limit: 6 # Number of posts displayed
+  date_type: created # or created or updated 文章日期显示创建日或者更新日
+
+# figcaption (图片描述文字)
+photofigcaption: false
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -252,15 +268,6 @@ post_edit: # 目前仅可选择一个平台在线编辑
   # 你需要在语雀文章 Front Matter 添加参数 id 并确保其唯一性（例如 “id: yuque”, “id: 01”）
   yuque: false
 
-# Related Articles
-related_post:
-  enable: true
-  limit: 6 # Number of posts displayed
-  date_type: created # or created or updated 文章日期显示创建日或者更新日
-
-# figcaption (图片描述文字)
-photofigcaption: false
-
 # post_pagination (分页)
 # value: 1 || 2 || 3 || 4 || false
 # 1: The 'next post' will link to old post
@@ -272,12 +279,12 @@ post_pagination: 2
 
 # Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
-  limit_day: 365 # When will it be shown
+  limit_day: 180 # When will it be shown
   position: top # position: top/bottom
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 时光悄然流逝，距离上次更新已有
+  message_next: 天，内容可能已经过时，请谨慎参考。
 
 # Share System (分享功能)
 # --------------------------------------
@@ -300,13 +307,13 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: # Twikoo/Waline
-  text: true # Display the comment name next to the button
+  use: Twikoo/Waline
+  text: false # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
-  count: false # Display comment count in post's top_img
-  card_post_count: false # Display comment count in Home Page
+  count: true # Display comment count in post's top_img
+  card_post_count: true # Display comment count in Home Page
 
 # valine
 # https://valine.js.org
@@ -413,15 +420,15 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2024
   custom_text:
   runtime:
-    enable: false
-    launch_time: 04/01/2021 00:00:00 # 网站上线时间
-    work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
-    work_description: 距离月入25k也就还差一个大佬带我~
-    offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
-    offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
+    enable: true
+    launch_time: 2024/08/30 10:00:00 # 网站上线时间
+    # work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
+    # work_description: 距离月入25k也就还差一个大佬带我~
+    # offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
+    # offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
@@ -777,7 +784,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 自定加载动画义头像
+  avatar: /assets/faicon.ico # 自定加载动画义头像
 
 # aside (侧边栏)
 # --------------------------------------
@@ -794,14 +801,13 @@ aside:
     category: true
   card_author:
     enable: true
-    description: # <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div> # 默认为站点描述
+    description: <div style="line-height:1.38; margin:0.6rem 0; text-align:center; color:rgba(255, 255, 255, 0.8);">让每一瞬间都散发可爱的光</div>
     name_link: /
-
   card_announcement:
-    enable: false
-    content: 欢迎来看我的博客鸭~
-  card_weixin:
     enable: true
+    content: 愿你的世界如花般美好，似云般自由~
+  card_weixin:
+    enable: false
     face: https://bu.dusays.com/2023/01/13/63c02edf44033.png
     backFace: https://bu.dusays.com/2023/05/13/645fa415e8694.png
   card_recent_post:
@@ -815,7 +821,7 @@ aside:
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
-    enable: true
+    enable: false
     limit: 40 # if set 0 will show all
     color: false
     sort_order: # Don't modify the setting unless you know how it works
@@ -838,15 +844,15 @@ aside:
 # busuanzi count for PV / UV in site
 # 访问人数
 busuanzi:
-  site_uv: false
-  site_pv: false
-  page_pv: false
+  site_uv: true
+  site_pv: true
+  page_pv: true
 
 # Time difference between publish date and now (网页运行时间)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 4/1/2021 00:00:00
+  publish_date: 2024/08/30 10:00:00
 
 # Console - Newest Comments
 newest_comments:
@@ -960,11 +966,6 @@ note:
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
-icons:
-  ali_iconfont_js: # 阿里图标symbol 引用链接，主题会进行加载 symbol 引用
-  fontawesome: false #是否启用fontawesome6图标
-  fontawesome_animation_css: #fontawesome_animation 如果有就会加载，示例值：https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css
-
 # other
 # --------------------------------------
 
@@ -999,8 +1000,8 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之间添加空格)
 pangu:
-  enable: false
-  field: site # site/post
+  enable: true
+  field: post # site/post
 
 # Lazyload (图片懒加载)
 # https://github.com/verlok/vanilla-lazyload
@@ -1014,16 +1015,19 @@ lazyload:
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
+# PWA
+# See https://github.com/JLHwung/hexo-offline
+# ---------------
 pwa:
-  enable: false
+  enable: true
   startup_image_enable: true
   manifest: /manifest.json
   theme_color: var(--anzhiyu-main)
   mask_icon: /img/siteicon/apple-icon-180.png
   apple_touch_icon: /img/siteicon/apple-icon-180.png
   bookmark_icon: /img/siteicon/apple-icon-180.png
-  favicon_32_32: /img/siteicon/32.png
-  favicon_16_16: /img/siteicon/16.png
+  favicon_32_32: /img/32.png
+  favicon_16_16: /img/16.png
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -1036,22 +1040,22 @@ css_prefix: true
 home_top:
   enable: true # 开关
   timemode: date #date/updated
-  title: 生活明朗
-  subTitle: 万物可爱。
-  siteText: anheyu.com
+  title: 花开有期
+  subTitle: 云舒有意
+  siteText: keaikeqing.cn
   category:
-    - name: 前端
-      path: /categories/前端开发/
+    - name: 强化学习
+      path: /categories/强化学习/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 大学
-      path: /categories/大学生涯/
+    - name: 总结经验
+      path: /categories/总结经验/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
-    - name: 生活
-      path: /categories/生活日常/
+    - name: 生活杂谈
+      path: /categories/生活杂谈/
       shadow: var(--anzhiyu-shadow-green)
       class: green
       icon: anzhiyu-icon-book
@@ -1061,10 +1065,10 @@ home_top:
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
   banner:
-    tips: 新品主题
-    title: Theme-AnZhiYu
-    image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
-    link: https://docs.anheyu.com/
+    tips: 个人网站
+    title: keaikeqing.cn
+    image: /assets/banner.webp
+    link: https://keaikeqing.cn/
 
 # 朋友圈配置
 friends_vue:
@@ -1080,11 +1084,11 @@ universe:
 
 # 页面卡片顶部气泡升起效果
 bubble:
-  enable: false
+  enable: true
 
 #  控制台打印信息
 console:
-  enable: true
+  enable: false
 
 # 51a统计配置
 LA:
@@ -1095,7 +1099,7 @@ LA:
 # 标签卖萌
 diytitle:
   enable: true
-  leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！
+  leaveTitle: w(ﾟДﾟ)w 期待下次再见！
   backTitle: ♪(^∇^*)欢迎肥来！
 
 # 留言弹幕配置
@@ -1139,37 +1143,37 @@ ptool:
 
 # 欢迎语配置
 greetingBox:
-  enable: false #开启后必须配置下面的list对应的时间段，不然会出现小白条
-  default: 晚上好👋
+  enable: true #开启后必须配置下面的list对应的时间段，不然会出现小白条
+  default: 每一天安好
   list:
-    # - greeting: 晚安😴
-    #   startTime: 0
-    #   endTime: 5
-    # - greeting: 早上好鸭👋, 祝你一天好心情！
-    #   startTime: 6
-    #   endTime: 9
-    # - greeting: 上午好👋, 状态很好，鼓励一下～
-    #   startTime: 10
-    #   endTime: 10
-    # - greeting: 11点多啦, 在坚持一下就吃饭啦～
-    #   startTime: 11
-    #   endTime: 11
-    # - greeting: 午安👋, 宝贝
-    #   startTime: 12
-    #   endTime: 14
-    # - greeting: 🌈充实的一天辛苦啦！
-    #   startTime: 14
-    #   endTime: 18
-    # - greeting: 19点喽, 奖励一顿丰盛的大餐吧🍔。
-    #   startTime: 19
-    #   endTime: 19
-    # - greeting: 晚上好👋, 在属于自己的时间好好放松😌~
-    #   startTime: 20
-    #   endTime: 24
+    - greeting: 晚安😴
+      startTime: 0
+      endTime: 5
+    - greeting: 早上好鸭👋, 祝你一天好心情！
+      startTime: 6
+      endTime: 9
+    - greeting: 上午好👋, 状态很好，鼓励一下～
+      startTime: 10
+      endTime: 10
+    - greeting: 11点多啦, 在坚持一下就吃饭啦～
+      startTime: 11
+      endTime: 11
+    - greeting: 午安👋, 宝贝
+      startTime: 12
+      endTime: 14
+    - greeting: 🌈充实的一天辛苦啦！
+      startTime: 14
+      endTime: 18
+    - greeting: 19点喽, 奖励一顿丰盛的大餐吧🍔。
+      startTime: 19
+      endTime: 19
+    - greeting: 晚上好👋, 在属于自己的时间好好放松😌~
+      startTime: 22
+      endTime: 24
 
 # 文章顶部ai摘要
 post_head_ai_description:
-  enable: true
+  enable: false
   gptName: AnZhiYu
   mode: local # 默认模式 可选值: tianli/local
   switchBtn: false # 可以配置是否显示切换按钮 以切换tianli/local
@@ -1181,7 +1185,7 @@ post_head_ai_description:
 
 # 快捷键配置
 shortcutKey:
-  enable: false
+  enable: true
   delay: 100 # 所有键位延时触发而不是立即触发（包括shift，以解决和浏览器键位冲突问题）
   shiftDelay: 200 # shift按下延时多久开启
 
@@ -1197,7 +1201,7 @@ linkPageTop:
   addFriendPlaceholder: "昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"
 
 # 缩略图后缀 archive/tag/category 页面单独开启后缀
-pageThumbnailSuffix: ""
+pageThumbnailSuffix: "!page_thumbnail"
 
 # 隐私协议弹窗
 agreementPopup:
@@ -1206,18 +1210,18 @@ agreementPopup:
 
 # 右键菜单
 rightClickMenu:
-  enable: false
+  enable: true
 
 # 首页随便逛逛people模式 而非技能点模式，关闭后为技能点模式需要配置creativity.yml
 peoplecanvas:
-  enable: true
+  enable: false
   img: https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png
 
 # 动效
 dynamicEffect:
   postTopWave: true # 文章顶部波浪效果
-  postTopRollZoomInfo: false # 文章顶部滚动时缩放
-  pageCommentsRollZoom: false # 非文章页面评论滚动时缩放显示（仅仅Twikoo生效）
+  postTopRollZoomInfo: true # 文章顶部滚动时缩放
+  pageCommentsRollZoom: true # 非文章页面评论滚动时缩放显示（仅仅Twikoo生效）
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)

@@ -1,11 +1,18 @@
 ---
 title: KTransformers
+date: 2024-08-30
+updated: 2024-08-30
+tags: NLP
+categories: NLP
+keywords: KTransformers
+description: KTransformers 是一个灵活的、以 Python 为中心的框架，旨在通过高级内核优化和放置/并行策略增强 transformers
+top_img: 
+cover: 
 ---
 
+# KTransformers
 
 KTransformers KTransformers 是一个灵活的、以 Python 为中心的框架，旨在通过高级内核优化和放置/并行策略增强 transformers
-
-<!-- more -->
 
 [KTransformers的Github链接](https://github.com/kvcache-ai/KTransformers)
 [DeepSeek V2的Github链接](https://github.com/deepseek-ai/DeepSeek-V2)
@@ -150,6 +157,7 @@ $$
 即只需要缓存$\textcolor{red}{c}$和$\textcolor{red}{K^r}$。
 
 论文中选取的参数如下：
+
 | 参数 | 值 |
 | --- | --- |
 | $d_{\text{model}}$ | 5120 |
