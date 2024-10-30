@@ -1,5 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+updated: {{ date }}
+categories: 
+top_img: /assets/
+cover: /assets/
 ---

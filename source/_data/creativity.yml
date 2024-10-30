@@ -1,0 +1,80 @@
+- class_name: 开启创造力
+  creativity_list:
+    - name: Java
+      color: "#fff"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg
+    - name: Docker
+      color: "#57b6e6"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg
+    - name: Node
+      color: "#333"
+      icon: https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/svg/node-logo.svg
+    - name: Python
+      color: "#fff"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg
+    - name: CSS3
+      color: "#2c51db"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg
+    - name: JS
+      color: "#f7cb4f"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg
+    - name: HTML
+      color: "#e9572b"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg
+    - name: Git
+      color: "#df5b40"
+      icon: https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg
+    - name: Android
+      color: "#3DDC84"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg
+    - name: Azure
+      color: "#0089D6"
+      icon: https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg
+    - name: Bash
+      color: "#4EAA25"
+      icon: https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg
+    - name: Bootstrap
+      color: "#7952B3"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg
+    - name: C++
+      color: "#00599C"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg
+    - name: C#
+      color: "#239120"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg
+    - name: Django
+      color: "#092E20"
+      icon: https://cdn.worldvectorlogo.com/logos/django.svg
+    - name: Flask
+      color: "#000000"
+      icon: https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg
+    - name: Hexo
+      color: "#0E83CD"
+      icon: https://www.vectorlogo.zone/logos/hexoio/hexoio-icon.svg
+    - name: Jekyll
+      color: "#CC0000"
+      icon: https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg
+    - name: Kotlin
+      color: "#0095D5"
+      icon: https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg
+    - name: Linux
+      color: "#FCC624"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg
+    - name: MySQL
+      color: "#4479A1"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg
+    - name: Nginx
+      color: "#009639"
+      icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg
+    - name: Pandas
+      color: "#150458"
+      icon: https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg
+    - name: PyTorch
+      color: "#EE4C2C"
+      icon: https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg
+    - name: SQLite
+      color: "#003B57"
+      icon: https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg
+    - name: TensorFlow
+      color: "#FF6F00"
+      icon: https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg
