@@ -20,7 +20,7 @@ nav:
       item:
         - name: 博客
           link: https://blog.anheyu.com/
-          icon: /img/favicon.ico
+          icon: /assets/avatar.ico
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -126,7 +126,7 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /assets/favicon.ico
+favicon: /img/favicon.ico
 
 # Avatar (头像)
 avatar:
@@ -138,6 +138,7 @@ disable_top_img: false
 
 # The banner image of home page
 index_img: false # "background: url() top / cover no-repeat"
+archive_img: false
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: /assets/default_top_img.webp
@@ -222,7 +223,7 @@ index_post_content:
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
-anchor: false
+anchor: true
 
 # Post
 # --------------------------------------
@@ -423,7 +424,7 @@ footer:
     since: 2024
   custom_text:
   runtime:
-    enable: true
+    enable: false
     launch_time: 2024/08/30 10:00:00 # 网站上线时间
     # work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     # work_description: 距离月入25k也就还差一个大佬带我~
@@ -518,17 +519,17 @@ footer:
     enable: true
     authorLink: /
     cc:
-      enable: false
+      enable: true
       link: /copyright
     linkList:
-      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-        text: 主题
+      # - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+      #   text: 主题
       # - link: https://image.anheyu.com
       #   text: 图床
-      # - link: https://beian.miit.gov.cn/
-      #   text: 湘ICP备-xxxxxxx号
+      - link: https://beian.miit.gov.cn/
+        text: xxxx-xxxxxxx
     subTitle:
-      enable: false
+      enable: true
       # Typewriter Effect (打字效果)
       effect: true
       # Effect Speed Options (打字效果速度参数)
@@ -636,10 +637,10 @@ sidebar:
   nav_menu_project: true
 
 # 文章h2添加分隔线
-h2Divider: false
+h2Divider: true
 
 # 表格隔行变色
-table_interlaced_discoloration: false
+table_interlaced_discoloration: true
 
 # 首页双栏显示
 article_double_row: true
@@ -669,7 +670,7 @@ rightside-bottom: 100px
 # canvas_ribbon (静止彩带背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -678,13 +679,13 @@ canvas_ribbon:
 
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
-  enable: false
+  enable: true
   mobile: false
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
@@ -701,7 +702,7 @@ activate_power_mode:
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999 # -1 or 9999
   mobile: false
 
@@ -754,7 +755,7 @@ hr_icon:
 
 # the subtitle on homepage (主页subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Effect Speed Options (打字效果速度参数)
@@ -784,7 +785,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: /assets/faicon.ico # 自定加载动画义头像
+  avatar: /img/favicon.ico # 自定加载动画义头像
 
 # aside (侧边栏)
 # --------------------------------------
@@ -946,7 +947,7 @@ fancybox: true
 # mermaid
 # see https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: false
+  enable: true
   # built-in themes: default/forest/dark/neutral
   theme:
     light: default

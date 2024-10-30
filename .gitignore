@@ -8,3 +8,7 @@ public/
 .deploy*/
 _multiconfig.yml
 .idea/
+
+
+# 保留
+!node_modules/hexo-theme-anzhiyu/layout/includes/header/index.pug
