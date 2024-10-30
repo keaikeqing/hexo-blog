@@ -3,7 +3,7 @@
 Thumbs.db
 db.json
 *.log
-node_modules/
+/node_modules/
 public/
 .deploy*/
 _multiconfig.yml
@@ -11,4 +11,3 @@ _multiconfig.yml
 
 
 # 保留
-!node_modules/hexo-theme-anzhiyu/layout/includes/header/index.pug

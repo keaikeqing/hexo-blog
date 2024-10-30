@@ -9,7 +9,7 @@ updates:
     open-pull-requests-limit: 10    # 限制同时打开的PR数量
     reviewers:
       - "keaikeqing"      # 当Dependabot创建一个PR时，自动指定一个reviewer。替换为您的GitHub用户名。
-    target-branch: "net-master-keaikeqing"        # 指定PR的目标分支
+    target-branch: "dev"        # 指定PR的目标分支
     labels:                        # 为Dependabot创建的PR添加标签
       - "dependencies"             # 添加一个名为"dependencies"的标签
       - "automerge"               # 添加一个名为"automerge"的标签
