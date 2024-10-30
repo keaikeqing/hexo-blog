@@ -11,7 +11,7 @@
 
 1. 安装npm包 `npm install`
 2. 本地预览 `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo server`
-3. 部署github `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo deploy`
+3. 部署github `hexo clean && hexo generate && hexo bangumi -u && hexo deploy`
 
 ## 未来计划
 
