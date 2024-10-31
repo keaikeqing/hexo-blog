@@ -11,7 +11,7 @@
 
 1. 安装npm包 `npm install`
 2. 本地预览 `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo server`
-3. 部署github `hexo clean && hexo generate && hexo bangumi -u && hexo deploy`
+3. 部署github `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo deploy`
 
 ## 未来计划
 
@@ -21,12 +21,11 @@
 2. 在线聊天
 3. 网站收录
 4. 搜索系统
-5. 公式系统
-6. 51A统计系统
-7. 关于页面
-8. 托管图片-几个方案
-9. CDN
-10. 自动部署
+5. 51A统计系统
+6. 关于页面
+7. 托管图片-几个方案
+8. CDN
+9. 自动部署
 
 ## 已知问题
 
@@ -59,3 +58,9 @@
 4. (241030)修复归档等界面图片布局错乱的问题，适配适配本地Markdown编辑器
 5. (241030)修复因为路径配置导致的部分图片不显示的问题
 6. (241030)删除page页面top_img，原主题有bug
+
+#### v0.2
+
+1. (241031)配置公式系统，可复制公式
+2. (241031)全面采用pandoc渲染
+3. (241031)适配图片渲染格式，扩展性增强
