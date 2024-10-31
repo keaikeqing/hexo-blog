@@ -101,7 +101,7 @@ docsearch:
 # Local search
 local_search:
   enable: true
-  preload: true
+  preload: false
   CDN:
 
 # Math (数学)
@@ -254,7 +254,7 @@ related_post:
   date_type: created # or created or updated 文章日期显示创建日或者更新日
 
 # figcaption (图片描述文字)
-photofigcaption: false
+photofigcaption: true
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -302,13 +302,13 @@ addtoany:
   enable: false
   item: facebook,twitter,wechat,sina_weibo,email,copy_link
 
-# Comments System
+# 评论系统
 # --------------------------------------
 
 comments:
   # Up to two comments system, the first will be shown as default
-  # Choose: Valine/Waline/Twikoo/Artalk
-  use: Twikoo/Waline
+  # Choose: Valine/Waline/Twikoo/Artalk/Giscus
+  use: Twikoo/Giscus
   text: false # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -1089,9 +1089,9 @@ console:
 
 # 51a统计配置
 LA:
-  enable: false
-  ck:
-  LingQueMonitorID:
+  enable: true
+  ck: 3KAOg7IT5KO5nuXL
+  LingQueMonitorID: 3KAOg7IT5KO5nuXL
 
 # 标签卖萌
 diytitle:
@@ -1127,7 +1127,7 @@ music_page_default: nav_music
 # 评论匿名邮箱
 visitorMail:
   enable: true
-  mail: ""
+  mail: "visitor@keaikeqing.cn"
 
 # ptool 文章底部工具
 ptool:
