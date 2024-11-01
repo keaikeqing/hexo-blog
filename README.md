@@ -18,8 +18,12 @@
 
 ### 部署命令
 
-1. 本地预览 `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo server`
-2. 部署github `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo deploy`
+1. 本地预览 `hexo clean && hexo generate && hexo swpp && hexo server`
+2. 部署github `hexo clean && hexo generate && hexo swpp && hexo deploy`
+3. 更新番剧数据 `hexo bangumi -u`
+4. 更新PWA图标
+   1. `npx pwa-asset-generator ./public/img/512.png ./public/img/siteicon --padding "calc(50vh - 20%) calc(50vw - 40%)" -s false -h true`
+   2. 由于hexo cl会清除/public目录中的文件，需要将生成的目录`/public/img`移动到根目录`/source/img`中
 
 ## 未来计划
 
