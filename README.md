@@ -7,11 +7,19 @@
 1. [Hexo](https://github.com/hexojs/hexo)
 2. [anzhiyu主题](https://github.com/anzhiyu-c/hexo-theme-anzhiyu)
 
+### 环境配置
+
+1. [vscode](https://code.visualstudio.com/)
+2. [node.js](https://nodejs.org/en/download/package-manager)
+3. npm包 `npm install`
+4. [hexo](https://hexo.io/zh-cn/) `npm install hexo-cli -g`
+5. [git](https://git-scm.com/downloads)
+6. [pandoc](https://github.com/jgm/pandoc/releases)
+
 ### 部署命令
 
-1. 安装npm包 `npm install`
-2. 本地预览 `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo server`
-3. 部署github `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo deploy`
+1. 本地预览 `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo server`
+2. 部署github `hexo clean && hexo generate && hexo bangumi -u && hexo swpp && hexo deploy`
 
 ## 未来计划
 
@@ -22,8 +30,6 @@
 5. Live2D
 
 ## 已知问题
-
-1. favicon图片修改
 
 ### 第三方插件bug
 
